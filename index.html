@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="calc-container">
+            <h2>Calculadora de IMC</h2>
+            <form id="imc-fomr">
+                <div id="form-inputs">
+                    <div class="form-control">
+                        <label for="height">Altura:</label>
+                        <input type="text" name="height" id="height" placeholder="informe a sua altura. Ex: 1,75">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="weight">Peso:</label>
+                        <input type="text" name="weight" id="weight" placeholder="informe o seu peso. Ex: 80,2">
+                    </div>
+
+                    <div class="action-control">
+                        <button id="calc-btn">Calcular</button>
+                        <button id="clear-btn">Limpar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" class="hide">
+            <p id="imc-number">Seu IMC: <span></span></p>
+            <p id="imc-info">Situação atual: <span></span></p>
+            <h3>Confira as classificações: </h3>
+            <div id="imc-table">
+                <div class="table-header">
+                    <h3>IMC</h3>
+                    <h3>Classificações</h3>
+                    <h3>Obesidade</h3>
+                </div>
+            </div>
+            <button id="back-btn">Voltar</button>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-text">
+            <p>2024&copy; BMI Calculator by Frenior&trade;</p>
+        </div>
+    </footer>
+</body>
+</html>
